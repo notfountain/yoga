@@ -1,0 +1,343 @@
+$primary-color: #8E80A9;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: $primary-color;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.pages-counter {
+    position: absolute;
+    top: 50%;
+    right:0;
+    font-size: 30px;
+    color: rgba(174, 164, 200, 0.5);
+    
+    &:after {
+        content: "";
+        display: inline-block;
+        width: 56px;
+        border: 1px solid rgba(139, 126, 172, 0.73);
+        margin-left: 11px;
+        vertical-align: middle;
+    }
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    background: url('img/bg-1-page.jpg') no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 70px 140px;
+    position: relative;
+     
+    .header-menu, .header-contacts {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .header-menu {
+        margin-bottom: 128px;
+    }
+    .subtitle {
+        padding: 0;
+        margin: 0;
+        font-family: 'Caveat', cursive;
+        font-size: 45px;
+        line-height: 45px;
+        margin-left: 145px;
+        margin-right: auto;
+    }
+    .title {
+        padding: 0;
+        margin: 0;
+        font-size: 265px;
+        letter-spacing: 90px;
+        margin-right: -90px;
+        color: white;
+        text-shadow: 0px 4px 50px rgba(131, 115, 161, 0.6);
+        line-height: 265px;
+    }
+    .free-class-link {
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        .link-button {
+            display: inline-block;
+            font-size: 35px;
+            text-align: center;
+            vertical-align: middle;
+            width: 56px;
+            height: 48px;
+            color: white;
+            background-color: #E65C7B;
+        }
+        span {
+            font-size: 14px;
+            line-height: 20px;
+            color: #E65C7B;
+            width: 191px;
+            display: inline-block;
+            text-align: left;
+            vertical-align: middle;
+            margin-left: 13px;
+            }
+    }
+
+    .header-contacts {
+        align-items: flex-end;
+        margin-top: 128px;
+    }
+    .social-networks {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        .social-networks-icon {
+            display: inline-block;
+            margin-right: 10px;
+            cursor: pointer;
+         }
+    }
+
+    
+}
+
+.courses {
+    box-sizing: border-box;
+    position: relative;
+    background: url('img/bg-2-page.png') no-repeat;
+    background-position: center;
+    padding-bottom: 86px;
+
+    .courses-cards {
+        max-width: 925px;
+        margin-right: auto;
+        margin-left: auto;
+        box-sizing: border-box;
+        padding-top: 65px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 573px;
+        font-family: 'Montserrat', sans-serif;
+        align-content: space-between;
+        justify-items: space-between;
+
+        .courses-card {
+            display: flex;
+            flex-direction: row;
+            
+            .link-button {
+                position: absolute;
+                display: inline-block;
+                width: 45px;
+                height: 30px;
+                right:36px;
+                bottom: 36px;
+                background-color: $primary-color;
+                color: white;
+                text-align: center;
+                line-height: 2;
+            }
+
+            &.first-card {
+                flex-direction: column;
+                .information {
+                    padding: 42px 0 26px 46px;
+                    height: 182px;
+                    .link-button {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        display: inline-block;
+                        background-color: #8E80A9;
+                        height: 100%;
+                        color: white;
+                        width: 17%;
+                        text-align: center;
+                        vertical-align: middle;
+                        font-size: 35px;
+                        line-height: 5;
+                    }
+                }
+            }
+            &.second-card {
+                .information {
+                    width: 305px;
+                }
+            }
+            &.third-card {
+                margin-top:28px;
+                margin-bottom: 57px;
+                .information {
+
+                    width: 305px;
+                }
+            }
+        }
+
+        .information {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #fff;
+            box-sizing: border-box;
+            padding: 33px;
+            box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+        }
+
+        .course-name {
+
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .timetable {
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .instructor {
+            width:140px;
+            color: #E65C7B;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+    }
+    .see-more-button {
+        font-size: 12px;
+        text-decoration: none;
+        color: $primary-color;
+        display: inline-block;
+        text-align: center;
+        padding: 17px 0;
+        background-color: white;
+        box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+        box-sizing: border-box;
+
+    }
+    }    
+
+.abonements {
+    box-sizing: border-box;
+    background: url('img/bg-3-page.png') no-repeat;
+    background-size: cover;
+    padding-top: 68px;
+    position: relative;
+    padding-bottom: 146px;
+    background-position: center;
+
+    .duration {
+        padding: 0;
+        list-style: none;
+        color: #E65C7B;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 54px;
+        vertical-align: middle;
+        
+        li {
+            display: inline-block;
+            margin-right: 68px;
+            cursor: pointer;
+            &:last-child {
+                margin-right: 0;
+            }
+            
+            &::after {
+                content: "";
+                width: 100%;
+                top: 7px;
+                background-color: #E65C7B;
+                height: 1px;
+                display: none;
+                position: relative;
+            }
+            &.active, &:hover {
+                &::after {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .types {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 931px;
+        justify-content: space-between;
+        align-content: flex-start;
+        text-align: center;
+        padding-top: 49px;
+        
+        .type {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #fff;
+            box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+            width: 263px;
+            height: 237px;
+           padding-top: 58px;
+           padding-bottom: 54px;
+           box-sizing: border-box;
+           align-items: center;
+
+           .type-title, .price {
+               
+               font-size: 18px;
+               font-weight: bold;
+           }
+           .price {
+               font-size: 30px;
+           }
+           .information {
+               
+               font-size: 12px;
+               color: #E65C7B;
+               width:91px;
+           }
+           .order-button {
+               display: none;
+               width: 223px;
+               height: 52px;
+               background-color: $primary-color;
+               color: white;
+               text-decoration: none;
+               font-size: 12px;
+               vertical-align: middle;
+               line-height: 52px;
+               margin-top: 15px;
+           }
+           &.active {
+               width: 331px;
+               height: 331px;
+               padding-bottom: 57px;
+               .information {
+                   width: 161px;
+               }
+               .order-button {
+                   display: inline-block;
+               }
+           }
+        }
+    }
+}
